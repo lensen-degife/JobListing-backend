@@ -1,7 +1,6 @@
-package com.telusko.JobListing;
+package com.telusko.JobListing.repository;
 
 import com.telusko.JobListing.model.Post;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 
