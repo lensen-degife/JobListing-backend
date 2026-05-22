@@ -1,11 +1,15 @@
 package com.telusko.JobListing.model;
 
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Arrays;
 
+
+@Document(collection = "JobPost")
 public class Post {
 
-    private String profiles;
+    private String profile;
     private String desc;
     private int exp;
     private String techs[];
@@ -14,11 +18,11 @@ public class Post {
     }
 
     public String getProfiles() {
-        return profiles;
+        return profile;
     }
 
     public void setProfiles(String profiles) {
-        this.profiles = profiles;
+        this.profile = profiles;
     }
 
     public String getDesc() {
@@ -48,7 +52,7 @@ public class Post {
     @Override
     public String toString() {
         return "Post{" +
-                "profiles='" + profiles + '\'' +
+                "profiles='" + profile + '\'' +
                 ", desc='" + desc + '\'' +
                 ", exp=" + exp +
                 ", techs=" + Arrays.toString(techs) +
